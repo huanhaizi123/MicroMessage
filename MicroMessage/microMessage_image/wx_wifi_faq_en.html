@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf8">
+		<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<title>Scan Wi-Fi</title>
+		<style>
+			body {
+				font: 14px/18px "微软雅黑","Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+			}
+			body, p, h1, h2, input, dl, dt, dd, ul, li{
+				margin: 0px;
+				padding: 0px;
+			}
+			.dn{
+				display:none;
+			}
+			ul{
+				list-style-type:none;
+			}
+			i{
+				font-style:normal;
+			}
+			.tc{
+				text-align:center;
+			}
+			.rel{
+				position:relative;
+			}
+			.abs{
+				position:absolute;
+			}
+			.header {
+				line-height: 1.5em;
+				border-bottom: 1px solid #B0BEBE;
+			}
+			.faq{
+				padding:0px 12px;
+			}
+			.faq .header{
+				padding:41px 0px 3px;
+				font-weight: bold;
+				font-size: 15px;
+			}
+			.faq .content{
+				padding:29px 0px;
+			}
+			.faq .content dt{
+				font-weight:bold;
+				margin-bottom:6px;
+			}
+			.faq .content dt,.faq .content dd{
+				padding-left:24px;
+			}
+			.faq .content dd{
+				color:#5E5E5E;
+			}
+			.faq .content dt .num,.faq .content dd .num{
+				top:0px;
+				left:0px;
+			}
+			.faq .content dd.img{
+				padding-left:0px;
+				margin-top:10px;
+				margin-left:25px;
+			}
+			.faq .content dl{
+				margin-bottom:26px;
+			}
+		</style>
+    </head>
+	<body>
+		<div class="faq">
+			<div class="header group">Scan Wi-Fi</div>
+			<div class="content">
+				<dl>
+					<dt class="rel"><i class="num abs">Q：</i>What is Scan Wi-Fi？</dt>
+					<dd class="rel"><i class="num abs">A：</i>Scan Wi-Fi is a convenient way to connect to the Internet by scanning Wi-Fi on WeChat and access Wi-Fi services provided by vendors and third-party network service providers..</dd>
+				</dl>
+				<dl>
+					<dt class="rel"><i class="num abs">Q：</i>Is Scan Wi-Fi secure？</dt>
+					<dd class="rel"><i class="num abs">A：</i>WeChat provides a convenient networking mode; however, be cautious when using public Wi-Fi and follow security instructions. Don’t:</dd>
+					<dd>
+						<ul>
+							<li>1）Open unknown links;</li>
+							<li>2）Download unknown applications;</li>
+							<li>3）Enter your password for WeChat, QQ or bank accounts on untrusted websites.</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt class="rel"><i class="num abs">Q：</i>How to enable Scan Wi-Fi？</dt>
+					<dd class="rel"><i class="num abs">A：</i><p class="js_wording">Select the prompted network on“Settings”-“Wi-Fi”on your device. After the network is enabled, you can return to WeChat and surf the Internet.</p></dd>
+					<dd id="img1" class="img dn"><img src="wx_wifi_faq1.en.jpg" width="180px"/></dd>
+					<dd id="ios6_img1" class="img dn"><img src="wx_wifi_ios6_faq1.en.jpg" width="180px"/></dd>
+				</dl>
+				<dl>
+					<dt class="rel"><i class="num abs">Q：</i>How do I connect to the Internet via Scan Wi-Fi？</dt>
+					<dd class="rel"><i class="num abs">A：</i><p class="js_wording">Scan the vendor's Wi-Fi QR code on "DISCOVER"-"Scan QR Code".</p></dd>
+					<dd class="img"><img src="wx_wifi_faq2.en.jpg" width="180px"/></dd>
+				</dl>
+				<dl>
+					<dt class="rel"><i class="num abs">Q：</i>How do I quit Scan Wi-Fi？</dt>
+					<dd class="rel"><i class="num abs">A：</i>Switch to other networks on "Settings"-"Wi-Fi" on your device or disable the Wi-Fi function.</dd>
+					<dd id="img3" class="img dn"><img src="wx_wifi_faq3.en.jpg" width="180px"/></dd>
+					<dd id="ios6_img3" class="img dn"><img src="wx_wifi_ios6_faq3.en.jpg" width="180px"/></dd>
+				</dl>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var version = Boolean(navigator.userAgent.match(/OS [7-9]_\d[_\d]* like Mac OS X/i));
+			var img1 = document.getElementById('img1'),
+				ios6_img1 = document.getElementById('ios6_img1'),
+				img3 = document.getElementById('img3'),
+				ios6_img3 = document.getElementById('ios6_img3');
+				
+			if((navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i))) {
+				if(version){
+					img1.style.display="block";
+					img3.style.display="block";
+				}else{
+					ios6_img1.style.display="block";
+					ios6_img3.style.display="block";
+				}
+			} else {
+				ios6_img1.style.display="block";
+				ios6_img3.style.display="block";
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,8 @@
+<whatsnew>
+    <page id="1" fullscreen="true" backgroundcolor="#ffffff">
+        <image id="whatsnew_newuser_01.png" x="0" y="0" width="ScreenWidth" height="ScreenHeight" tag="1000"/>
+        <text id="whatsnew_5.3_tip1" y="210" y5="270" fontSize="16" color="#f2f2f2"/>
+        <text id="whatsnew_5.3_tip2" y="235" y5="295" fontSize="16" color="#f2f2f2"/>
+        <image id="whatsnew_newuser_02.png" x="0" y="0" width="ScreenWidth" height="ScreenHeight" tag="1001"/>
+    </page>
+</whatsnew>  

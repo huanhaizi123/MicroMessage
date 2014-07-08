@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf8">
+		<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<title>使用帮助</title>
+		<style>
+			body {
+				font: 14px/18px "微软雅黑","Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+			}
+			body, p, h1, h2, input, dl, dt, dd, ul, li{
+				margin: 0px;
+				padding: 0px;
+			}
+			.dn{
+				display:none;
+			}
+			ul{
+				list-style-type:none;
+			}
+			i{
+				font-style:normal;
+			}
+			.tc{
+				text-align:center;
+			}
+			.rel{
+				position:relative;
+			}
+			.abs{
+				position:absolute;
+			}
+			.header {
+				line-height: 1.5em;
+				border-bottom: 1px solid #B0BEBE;
+			}
+			.faq{
+				padding:0px 12px;
+			}
+			.faq .header{
+				padding:41px 0px 3px;
+				font-weight: bold;
+				font-size: 15px;
+			}
+			.faq .content{
+				padding:29px 0px;
+			}
+			.faq .content dt{
+				font-weight:bold;
+				margin-bottom:6px;
+			}
+			.faq .content dt,.faq .content dd{
+				padding-left:24px;
+			}
+			.faq .content dd{
+				color:#5E5E5E;
+			}
+			.faq .content dt .num,.faq .content dd .num{
+				top:0px;
+				left:0px;
+			}
+			.faq .content dd.img{
+				padding-left:0px;
+				margin-top:10px;
+				margin-left:25px;
+			}
+			.faq .content dl{
+				margin-bottom:26px;
+			}
+		</style>
+    </head>
+	<body>
+		<div class="faq">
+			<div class="header group">扫一扫Wi-Fi使用帮助</div>
+			<div class="content">
+				<dl>
+					<dt class="rel"><i class="num abs">Q：</i>什么是扫一扫Wi-Fi？</dt>
+					<dd class="rel"><i class="num abs">A：</i>扫一扫Wi-Fi是通过微信扫一扫即可连接互联网的方便联网方式。</dd>
+				</dl>
+				<dl>
+					<dt class="rel"><i class="num abs">Q：</i>扫一扫Wi-Fi安全吗？</dt>
+					<dd class="rel"><i class="num abs">A：</i>微信只是提供了一种方便的联网方式。用户仍需要注意上网安全：</dd>
+					<dd>
+						<ul>
+							<li>1）不要随意打开陌生链接；</li>
+							<li>2）不要随意下载陌生应用；</li>
+							<li>3）不要在不能确认的网站输入自己的微信、QQ和银行账号密码。</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt class="rel"><i class="num abs">Q：</i>如何连接扫一扫Wi-Fi？</dt>
+					<dd class="rel"><i class="num abs">A：</i><p class="js_wording">打开设备的“设置”-“Wi-Fi”，选取所提示的网络，直到网络已经连接上，回到微信即可上网。</p></dd>
+					<dd id="img1" class="img dn"><img src="wx_wifi_faq1.jpg" width="180px"/></dd>
+					<dd id="ios6_img1" class="img dn"><img src="wx_wifi_ios6_faq1.jpg" width="180px"/></dd>
+				</dl>
+				<dl>
+					<dt class="rel"><i class="num abs">Q：</i>如何通过微信扫一扫连接互联网？</dt>
+					<dd class="rel"><i class="num abs">A：</i><p class="js_wording">打开微信的“发现”-“扫一扫”，扫描商家提供的扫一扫Wi-Fi二维码。</p></dd>
+					<dd class="img"><img src="wx_wifi_faq2.jpg" width="180px"/></dd>
+				</dl>
+				<dl>
+					<dt class="rel"><i class="num abs">Q：</i>如何退出扫一扫Wi-Fi？</dt>
+					<dd class="rel"><i class="num abs">A：</i>打开设备的“设置”-“Wi-Fi”，切换到其它网络，或者，关闭“Wi-Fi”功能。</dd>
+					<dd id="img3" class="img dn"><img src="wx_wifi_faq3.jpg" width="180px"/></dd>
+					<dd id="ios6_img3" class="img dn"><img src="wx_wifi_ios6_faq3.jpg" width="180px"/></dd>
+				</dl>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var version = Boolean(navigator.userAgent.match(/OS [7-9]_\d[_\d]* like Mac OS X/i));
+			var img1 = document.getElementById('img1'),
+				ios6_img1 = document.getElementById('ios6_img1'),
+				img3 = document.getElementById('img3'),
+				ios6_img3 = document.getElementById('ios6_img3');
+				
+			if((navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i))) {
+				if(version){
+					img1.style.display="block";
+					img3.style.display="block";
+				}else{
+					ios6_img1.style.display="block";
+					ios6_img3.style.display="block";
+				}
+			} else {
+				ios6_img1.style.display="block";
+				ios6_img3.style.display="block";
+			}
+			
+		</script>
+	</body>
+</html>
